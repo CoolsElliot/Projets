@@ -1,0 +1,1807 @@
+@import "./_fonts"
+@import "./_icones"
+@import "./_variables"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
+
+body
+    background-image: url("../img/main_bg.jpg")
+    background-size: 30%
+    background-repeat: repeat
+
+/* HEADER */
+
+header
+    background-image: linear-gradient(rgba(15, 15, 17, 0.9),rgba(15, 15, 17, 0.9)),url("../img/banner1.jpg")
+    background-size: cover
+    background-position: center
+
+    .carousel-item
+
+        div
+            display: flex
+            justify-content: center
+            align-items: center
+
+            button
+                &:first-of-type
+                    padding: 15px 15px
+                    background-color: white
+                    border-radius: 30px
+                    border: none
+                    margin-right: 25px
+                    font-size: 16px
+
+        
+                &:nth-of-type(2)
+                    padding: 15px 15px
+                    background-color: $danger
+                    border-radius: 30px
+                    border: none
+                    color: white
+                    font-size: 16px
+        p
+            font-family: "Courgette"
+            font-size: 45px
+            color: white
+            text-align: center
+    
+        .textBig
+            font-size: 60px
+    
+        .textRed
+            color: $danger
+
+    .carousel-indicators
+        position: unset
+        bottom: -100px
+
+    .carousel-indicators 
+        [data-bs-target]
+            box-sizing: content-box
+            flex: 0 1 auto
+            width: $carousel-indicator-width
+            height: $carousel-indicator-height
+            padding: 0
+            margin-right: $carousel-indicator-spacer
+            margin-left: $carousel-indicator-spacer
+            text-indent: -999px
+            cursor: pointer
+            background-color: $carousel-indicator-active-bg
+            background-clip: padding-box
+            border: none
+            border-radius: 100%
+            // Use transparent borders to increase the hit area by 10px on top and bottom.
+            border-top: $carousel-indicator-hit-area-height solid transparent
+            border-bottom: $carousel-indicator-hit-area-height solid transparent
+            opacity: $carousel-indicator-opacity
+            @include transition($carousel-indicator-transition)
+
+        .active
+            opacity: $carousel-indicator-active-opacity
+            background: radial-gradient(#000 20%,#fff 50%) content-box
+
+#navbarNavAltMarkup
+    justify-content: center
+
+    div
+        &:first-of-type
+            border-top: 1px solid grey
+            border-bottom: 1px solid grey
+        
+        &:nth-of-type(2)
+            border-top: 1px solid grey
+            border-bottom: 1px solid grey
+            
+
+.navbar-brand
+    display: none
+
+.navbar-nav
+    a
+        &:hover
+            background-color: $danger
+
+#rouge
+    background-color: $danger
+
+
+#headerRelative
+    padding: 0
+
+#decorationBottom
+    background-image: url("../img/bottom_decoration_img.png")
+    background-repeat: repeat-x
+    background-size: contain
+    height: 20px
+    width: 100%
+    z-index: 2
+
+/*SECTION 1 */
+
+#decoRelative
+    position: relative
+                
+    #deco1
+        position: absolute
+        top: 0
+        left:0
+        z-index: 2
+
+    #deco2
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 2
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 0
+
+    .decorationLine
+        margin-bottom: 40px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    p
+        font-size: 18px
+        padding: 0 25%
+        text-align: center
+        font-style: normal
+
+#decoRelative2
+    position: relative
+
+    #deco3
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 2
+
+    #deco4
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 2
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 0
+
+    .decorationLine
+        margin-bottom: 40px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    #v-pills-tab
+        width: 20%
+
+    .nav-link 
+        display: block
+        padding: 40px
+        font-size: 34px
+        font-weight: $nav-link-font-weight
+        color: unset
+        text-decoration: unset
+        border-bottom: 1px solid grey
+        @include transition($nav-link-transition)
+
+        p
+            font-family: "Courgette"
+            color: black
+
+        i
+            color: grey
+            font-size: 60px
+
+        &:focus 
+            border-right: 8px solid $danger
+
+            p
+                color: black
+            
+            i
+                color: $danger
+
+        &:active
+
+            p
+                color: grey
+            
+            i
+                color: $danger
+                
+        // Disabled state lightens text
+        &.disabled 
+            color: unset
+            pointer-events: none
+            cursor: unset
+
+    #v-pills-tabContent
+        width: 80%
+        padding-top: 60px
+        border-left: 1px solid grey
+
+.itemsMenu
+
+    .itemMenu
+        margin-right: 20px
+        border-bottom: 1px dotted grey
+        padding: 10px 0
+                    
+        img
+            border: 6px solid lightgrey 
+            border-radius: 50%
+            height: 150px
+            margin-right: 20px
+            margin-left: 20px
+
+        div
+            &:first-of-type
+        
+                h3
+                    font-size: 20px
+                    margin-right: 20px
+
+                p
+                    font-size: 16px
+        
+            &:nth-of-type(2)
+            
+                p
+                    background-color: lightgrey
+                    color: $danger
+                    padding: 0 10px
+                    
+            
+            
+
+
+/* SECTION 2 */
+
+#backgroundImage2
+    background-image: url("../img/team_background.jpg")
+    background-size: cover
+    background-position: center
+    height: 100%
+
+#chef
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 80px 0 0 0
+
+    .decorationLine
+        margin-bottom: 80px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    p
+        font-size: 18px
+        padding: 0 25%
+        text-align: center
+        font-style: normal
+        color: white
+
+#imagesChef
+
+    .imageChef
+
+        img
+            border-bottom: 1px solid grey
+            width: 300px
+            height: 470px
+
+/* SECTION 3 */
+
+#decoRelative3
+    position: relative
+                
+    #deco5
+        position: absolute
+        top: 0
+        left:0
+        z-index: 2
+
+    #deco6
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 2
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 80px 0 0 0
+
+    .decorationLine
+        margin-bottom: 80px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    p
+        font-size: 18px
+        padding: 0 25%
+        text-align: center
+        font-style: normal
+
+#form
+    background-image: url("../img/book_table_bg.jpg")
+    background-size: 100% 100%
+    background-position: center
+    background-repeat: no-repeat
+    padding: 0 10%
+    margin: 0 20%
+    border-radius: 20px
+
+    p
+        font-size: 18px
+        padding: 0
+        text-align: center
+        font-style: normal
+        color: white
+        margin: 60px 0
+    
+    span
+        font-size: 30px
+        font-family: unset
+        color: white
+
+form
+
+    div
+        input
+            height: 50px
+            width: 45%
+            margin: 10px auto
+            border: none
+            border-radius: 10px
+            color: black
+
+            &::placeholder
+                color: black
+
+        select
+            height: 50px
+            width: 45%
+            margin: 10px auto
+            border: none
+            border-radius: 10px
+            color: black
+            
+    button
+        border: none
+        border-radius: 20px
+        width: 20%
+        height: 50px
+        background-color: $danger
+        color: white
+        align-self: center
+        margin: 60px 0
+
+#decoRelative4
+    position: relative
+
+    #deco7
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 2
+
+    #deco8
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 2
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 60px 0 0 0
+
+    .decorationLine
+        margin-bottom: 60px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    #imagesBlog
+        div
+            img
+                border: 4px solid lightgrey
+                border-radius: 10px
+                width: 90%
+
+            div
+                width: 80%
+                margin-top: -40px
+                
+                h3
+                    border-radius: 10px
+                    background-color: $danger
+                    padding: 25px 10px
+                    color: white
+                    font-size: 20px
+                    font-weight: normal
+
+                    #textBlog
+                        color: white
+                        font-family: unset
+                        font-size: 24px
+                        font-weight: bold
+                    
+
+                p
+                    align-self: flex-start
+
+                    &:first-of-type
+                        font-size: 20px
+                        font-weight: bold
+                    
+                    &:nth-of-type(2)
+                        font-size: 16px
+                        font-weight: normal
+    
+    button
+        border: none
+        border-radius: 20px
+        width: 12%
+        height: 50px
+        background-color: $danger
+        color: white
+        align-self: center
+        margin: 60px 0
+
+/* SECTION 4 */
+
+#backgroundImage3
+    background-image: url("../img/testimonials_background.jpg")
+    background-size: cover
+    background-position: center
+
+
+#testimonials
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 80px 0 0 0
+
+    .decorationLine
+        margin-bottom: 80px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    p
+        font-size: 18px
+        padding: 0 25%
+        text-align: center
+        font-style: normal
+        color: white
+
+    div
+        width: 80%
+        align-self: center
+        margin-bottom: 60px
+
+        div
+            &:first-of-type
+                height: 100%
+
+                img
+                    border: 6px solid lightgrey
+                    border-radius: 50%
+                    margin-right: 10px
+                    height: 200px
+
+                div
+                    border: 2px solid grey
+                    border-radius: 20px
+                    margin: 0 20px 0 10px
+                    text-align: left
+                    padding: 15px 10px
+                    justify-content: center
+                    
+
+                    h3
+                        color: white
+                        margin: auto 0
+
+                    p
+                        &:first-of-type 
+                            font-size: 20px
+                            padding: 0
+                            text-align: left
+                            color: $danger
+                            margin: auto 0 auto 0
+                        
+                        &:nth-of-type(2)
+                            font-size: 18px
+                            padding: 0
+                            text-align: left
+                            color: white
+                            margin: auto 0 auto 0
+                    
+
+            &:nth-of-type(2)
+                height: 100%
+
+                img
+                    border: 6px solid lightgrey
+                    border-radius: 50%
+                    margin-left: 10px
+                    height: 200px
+
+                div
+                    border: 2px solid grey
+                    border-radius: 20px
+                    margin: 0 10px 0 20px
+                    text-align: left
+                    padding: 15px 10px
+                    justify-content: center
+
+                    h3
+                        color: white
+                        margin: auto 0
+
+                    p
+                        &:first-of-type 
+                            font-size: 20px
+                            padding: 0
+                            text-align: left
+                            color: $danger
+                            margin: auto 0 auto 0
+
+                        
+                        &:nth-of-type(2)
+                            font-size: 18px
+                            padding: 0
+                            text-align: left
+                            color: white
+                            margin: auto 0 auto 0
+
+/* SECTION 5 */
+
+#contact
+    margin-bottom: 60px
+
+    .titreMenu
+        font-family: "Courgette"
+        font-size: 40px
+        margin: 80px 0 0 0
+
+    .decorationLine
+        margin-bottom: 80px
+    
+
+    span
+        font-size: 50px
+        font-family: "Courgette"
+        color: $danger
+
+    p
+        font-size: 18px
+        padding: 0 25%
+        text-align: center
+        font-style: normal
+        color: black
+
+    #itemsContact
+        background-color: $danger
+        width: 30%
+        align-self: center
+        border-radius: 20px
+        padding: 20px 
+
+        #itemContact
+            color: white
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+
+            i
+                margin: 10px 0
+                font-size: 60px
+
+            p
+                color: white
+
+            &:first-of-type
+                border-bottom: 1px solid white
+
+            &:nth-of-type(2)
+                border-bottom: 1px solid white
+
+/* FOOTER */
+
+footer
+    background-image: url("../img/footer_background.jpg")
+    background-size: cover
+    background-position: center
+
+#decorationTop
+    background-image: url("../img/footer_bottom_decoration_img.png")
+    background-repeat: repeat-x
+    background-size: contain
+    height: 20px
+    width: 100%
+    z-index: 2
+    margin-bottom: 60px
+
+#footerDisplay
+    padding: 0 60px
+
+    div
+        width: 28%
+
+        h3
+            color: white
+            margin-bottom: 20px
+
+        p
+            color: white
+            margin-bottom: 20px
+        
+        &:first-of-type
+            ul
+                display: flex
+                li
+                    i
+                        color: white
+                        font-size: 40px
+                        margin-right: 30px
+            
+        &:nth-of-type(2)
+            div
+                div
+                    img
+                        height: 60px
+                        margin: 10px
+
+        &:nth-of-type(3)
+            div
+                div
+                    width: 100%
+
+                    p
+                        border: 2px solid white
+                        border-radius: 20px
+                        background-color: $danger
+                        padding: 5px 10px
+                        margin-right: 10px
+            
+
+
+#bottomFooter
+    background-color: $danger
+    height: 75px
+                
+
+
+@media screen and (max-width: 576px)
+
+    /* HEADER */
+
+    #navbarNavAltMarkup
+        justify-content: center
+
+        div
+            &:first-of-type
+            border: none
+        
+            &:nth-of-type(2)
+            border: none
+
+        img
+            display: none
+
+    .navbar-brand
+        display: unset
+
+
+    header
+        .carousel-item
+
+            div
+
+                button
+                    &:first-of-type                  
+                        font-size: 12px
+
+        
+                    &:nth-of-type(2)                  
+                        font-size: 12px
+
+            p
+                font-size: 30px
+    
+            .textBig
+                font-size: 44px
+
+        .carousel-indicators
+
+            button
+                border: 1px solid black
+                border-radius: 50%
+                width: 20px
+                height: 20px
+
+    /* SECTION 1 */
+
+    #decoRelative
+        
+        .titreMenu
+            font-size: 26px
+            margin: 60px 0 0 0
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 14px
+            padding: 0 5%
+
+    #decoRelative2
+
+        .titreMenu
+            font-size: 26px
+            margin: 0
+    
+        span
+            font-size: 30px
+
+        #v-pills-tab
+            width: 20%
+            height: 20%
+
+        .nav-link 
+            padding: 5px
+            font-size: 14px
+
+            i
+                font-size: 20px
+
+        #v-pills-tabContent
+            padding-top: 0
+
+    .itemsMenu
+        flex-direction: column
+
+        .itemMenu
+            flex-direction: column
+            margin-right: 0
+            padding: 10px 0
+                    
+            img
+                height: 75px
+                margin-right: 0
+                margin-left: 0
+
+            div
+                &:first-of-type
+        
+                    h3
+                        font-size: 20px
+                        margin-right: 0
+
+                    p
+                        font-size: 14px
+        
+                &:nth-of-type(2)
+            
+                    p
+                        padding: 0 10px
+
+    /* SECTION 2 */
+
+    #backgroundImage2
+        background-image: url("../img/team_background.jpg")
+        background-size: cover
+        background-position: center
+        height: 100%
+
+    #chef
+
+        .titreMenu
+            font-size: 26px
+    
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #imagesChef
+        flex-direction: column
+        align-items: center
+
+    /* SECTION 3 */
+
+    #decoRelative3
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #form
+        padding: 0
+        margin: 0
+
+        p
+            font-size: 16px
+            padding: 0
+            margin: 40px 0
+    
+        span
+            font-size: 14px
+
+    form
+
+        div
+            input
+                height: 35px
+
+            select
+                height: 35px
+            
+        button
+            width: 35%
+            height: 35px
+
+    #decoRelative4
+
+        .titreMenu
+            font-size: 26px   
+
+        span
+            font-size: 30px
+
+        #imagesBlog
+            flex-direction: column
+
+            div
+
+                div
+                    margin-top: -20px
+                
+                    h3
+                        padding: 10px 5px
+                        font-size: 14px
+
+                        #textBlog
+                            font-size: 20px
+                    
+
+                p
+
+                    &:first-of-type
+                        font-size: 18px
+                    
+                    &:nth-of-type(2)
+                        font-size: 14px
+    
+        button
+            border: none
+            border-radius: 20px
+            width: unset
+            height: 50px
+            background-color: $danger
+            color: white
+            align-self: center
+            margin: 60px 0
+            font-size: 12px
+
+    /* SECTION 4 */
+
+    #backgroundImage3
+        background-image: url("../img/testimonials_background.jpg")
+        background-size: cover
+        background-position: center
+
+
+    #testimonials
+
+        .titreMenu
+            font-size: 26px
+   
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        div
+            width: 100%
+            flex-direction: column
+
+            div
+                &:first-of-type
+                    height: 50%
+
+                    img
+                        margin-right: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+                    
+
+                &:nth-of-type(2)
+                    height: 50%
+
+                    img
+                        margin-left: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0 
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+
+
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+
+    /* SECTION 5 */ 
+    
+    #contact
+        margin-bottom: 60px
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        #itemsContact
+            width: 80%
+
+            #itemContact
+
+                i
+                    font-size: 30px
+
+    /* FOOTER */
+
+    footer
+        background-image: url("../img/footer_background.jpg")
+        background-size: cover
+        background-position: center
+
+    #decorationTop
+        background-image: url("../img/footer_bottom_decoration_img.png")
+        background-repeat: repeat-x
+        background-size: contain
+        height: 20px
+        width: 100%
+        z-index: 2
+        margin-bottom: 60px
+
+    #footerDisplay
+        padding: 0 60px
+        flex-direction: column
+
+        div
+            width: 90%
+            margin-bottom: 40px
+            
+            &:nth-of-type(2)
+                div
+                    div
+                        img
+                            height: 50px
+
+            &:nth-of-type(3)
+                div
+                    div
+                        width: 100%
+
+                        p
+                            font-size: 12px
+            
+
+
+    #bottomFooter
+        background-color: $danger
+        height: 75px
+
+@media screen and (min-width: 576px) and (max-width: 768px)
+
+    /* HEADER */
+
+    #navbarNavAltMarkup
+        justify-content: center
+
+        div
+            &:first-of-type
+            border: none
+        
+            &:nth-of-type(2)
+            border: none
+
+        img
+            display: none
+
+    .navbar-brand
+        display: unset
+
+
+    header
+        .carousel-item
+
+            div
+
+                button
+                    &:first-of-type                  
+                        font-size: 12px
+
+        
+                    &:nth-of-type(2)                  
+                        font-size: 12px
+
+            p
+                font-size: 30px
+    
+            .textBig
+                font-size: 44px
+
+        .carousel-indicators
+
+            button
+                border: 1px solid black
+                border-radius: 50%
+                width: 20px
+                height: 20px
+
+    /* SECTION 1 */
+
+    #decoRelative
+        
+        .titreMenu
+            font-size: 26px
+            margin: 60px 0 0 0
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 14px
+            padding: 0 5%
+
+    #decoRelative2
+
+        .titreMenu
+            font-size: 26px
+            margin: 0
+    
+        span
+            font-size: 30px
+
+        #v-pills-tab
+            width: 20%
+            height: 20%
+
+        .nav-link 
+            padding: 5px
+            font-size: 14px
+
+            i
+                font-size: 20px
+
+        #v-pills-tabContent
+            padding-top: 0
+
+    .itemsMenu
+        flex-direction: column
+
+        .itemMenu
+            flex-direction: column
+            margin-right: 0
+            padding: 10px 0
+                    
+            img
+                height: 75px
+                margin-right: 0
+                margin-left: 0
+
+            div
+                &:first-of-type
+        
+                    h3
+                        font-size: 20px
+                        margin-right: 0
+
+                    p
+                        font-size: 14px
+        
+                &:nth-of-type(2)
+            
+                    p
+                        padding: 0 10px
+
+    /* SECTION 2 */
+
+    #backgroundImage2
+        background-image: url("../img/team_background.jpg")
+        background-size: cover
+        background-position: center
+        height: 100%
+
+    #chef
+
+        .titreMenu
+            font-size: 26px
+    
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #imagesChef
+        flex-direction: column
+        align-items: center
+
+    /* SECTION 3 */
+
+    #decoRelative3
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #form
+        padding: 0
+        margin: 0
+
+        p
+            font-size: 16px
+            padding: 0
+            margin: 40px 0
+    
+        span
+            font-size: 14px
+
+    form
+
+        div
+            input
+                height: 35px
+
+            select
+                height: 35px
+            
+        button
+            width: 35%
+            height: 35px
+
+    #decoRelative4
+
+        .titreMenu
+            font-size: 26px   
+
+        span
+            font-size: 30px
+
+        #imagesBlog
+            flex-direction: column
+
+            div
+
+                div
+                    margin-top: -20px
+                
+                    h3
+                        padding: 10px 5px
+                        font-size: 14px
+
+                        #textBlog
+                            font-size: 20px
+                    
+
+                p
+
+                    &:first-of-type
+                        font-size: 18px
+                    
+                    &:nth-of-type(2)
+                        font-size: 14px
+    
+        button
+            border: none
+            border-radius: 20px
+            width: 25%
+            height: 50px
+            background-color: $danger
+            color: white
+            align-self: center
+            margin: 60px 0
+
+    /* SECTION 4 */
+
+    #backgroundImage3
+        background-image: url("../img/testimonials_background.jpg")
+        background-size: cover
+        background-position: center
+
+
+    #testimonials
+
+        .titreMenu
+            font-size: 26px
+   
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        div
+            width: 100%
+            flex-direction: column
+
+            div
+                &:first-of-type
+                    height: 50%
+
+                    img
+                        margin-right: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+                    
+
+                &:nth-of-type(2)
+                    height: 50%
+
+                    img
+                        margin-left: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0 
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+
+
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+
+    /* SECTION 5 */ 
+    
+    #contact
+        margin-bottom: 60px
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        #itemsContact
+            width: 80%
+
+            #itemContact
+
+                i
+                    font-size: 30px
+
+    /* FOOTER */
+
+    footer
+        background-image: url("../img/footer_background.jpg")
+        background-size: cover
+        background-position: center
+
+    #decorationTop
+        background-image: url("../img/footer_bottom_decoration_img.png")
+        background-repeat: repeat-x
+        background-size: contain
+        height: 20px
+        width: 100%
+        z-index: 2
+        margin-bottom: 60px
+
+    #footerDisplay
+        padding: 0 60px
+        flex-direction: column
+        justify-content: unset
+        align-items: center
+
+        div
+            width: 90%
+            margin-bottom: 40px
+            align-items: center
+            
+            &:nth-of-type(2)
+                div
+                    div
+                        img
+                            height: 50px
+                            margin: auto
+
+            &:nth-of-type(3)
+                div
+                    align-items: center
+
+                    div
+                        width: 100%
+                        justify-content: center
+                        p
+                            font-size: 12px
+            
+
+
+    #bottomFooter
+        background-color: $danger
+        height: 75px
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+
+    /* HEADER */
+
+    #navbarNavAltMarkup
+        justify-content: center
+
+        div
+            &:first-of-type
+            border: none
+        
+            &:nth-of-type(2)
+            border: none
+
+        img
+            display: none
+
+    .navbar-brand
+        display: unset
+
+
+    header
+        .carousel-item
+
+            div
+
+                button
+                    &:first-of-type                  
+                        font-size: 12px
+
+        
+                    &:nth-of-type(2)                  
+                        font-size: 12px
+
+            p
+                font-size: 30px
+    
+            .textBig
+                font-size: 44px
+
+        .carousel-indicators
+
+            button
+                border: 1px solid black
+                border-radius: 50%
+                width: 20px
+                height: 20px
+
+    /* SECTION 1 */
+
+    #decoRelative
+        
+        .titreMenu
+            font-size: 26px
+            margin: 60px 0 0 0
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 14px
+            padding: 0 5%
+
+    #decoRelative2
+
+        .titreMenu
+            font-size: 26px
+            margin: 0
+    
+        span
+            font-size: 30px
+
+        #v-pills-tab
+            width: 20%
+            height: 20%
+
+        .nav-link 
+            padding: 5px
+            font-size: 14px
+
+            i
+                font-size: 20px
+
+        #v-pills-tabContent
+            padding-top: 0
+
+    .itemsMenu
+        flex-direction: column
+
+        .itemMenu
+            flex-direction: column
+            margin-right: 0
+            padding: 10px 0
+                    
+            img
+                height: 75px
+                margin-right: 0
+                margin-left: 0
+
+            div
+                &:first-of-type
+        
+                    h3
+                        font-size: 20px
+                        margin-right: 0
+
+                    p
+                        font-size: 14px
+        
+                &:nth-of-type(2)
+            
+                    p
+                        padding: 0 10px
+
+    /* SECTION 2 */
+
+    #backgroundImage2
+        background-image: url("../img/team_background.jpg")
+        background-size: cover
+        background-position: center
+        height: 100%
+
+    #chef
+
+        .titreMenu
+            font-size: 26px
+    
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #imagesChef
+        flex-direction: column
+        align-items: center
+
+    /* SECTION 3 */
+
+    #decoRelative3
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+    #form
+        padding: 0
+        margin: 0
+
+        p
+            font-size: 16px
+            padding: 0
+            margin: 40px 0
+    
+        span
+            font-size: 14px
+
+    form
+
+        div
+            input
+                height: 35px
+
+            select
+                height: 35px
+            
+        button
+            width: 35%
+            height: 35px
+
+    #decoRelative4
+
+        .titreMenu
+            font-size: 26px   
+
+        span
+            font-size: 30px
+
+        #imagesBlog
+            flex-direction: column
+
+            div
+
+                div
+                    margin-top: -20px
+                
+                    h3
+                        padding: 10px 5px
+                        font-size: 14px
+
+                        #textBlog
+                            font-size: 20px
+                    
+
+                p
+
+                    &:first-of-type
+                        font-size: 18px
+                    
+                    &:nth-of-type(2)
+                        font-size: 14px
+    
+        button
+            border: none
+            border-radius: 20px
+            width: 25%
+            height: 50px
+            background-color: $danger
+            color: white
+            align-self: center
+            margin: 60px 0
+
+    /* SECTION 4 */
+
+    #backgroundImage3
+        background-image: url("../img/testimonials_background.jpg")
+        background-size: cover
+        background-position: center
+
+
+    #testimonials
+
+        .titreMenu
+            font-size: 26px
+   
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        div
+            width: 100%
+            flex-direction: column
+
+            div
+                &:first-of-type
+                    height: 50%
+
+                    img
+                        margin-right: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+                    
+
+                &:nth-of-type(2)
+                    height: 50%
+
+                    img
+                        margin-left: 0
+                        height: 100px
+                        width: 100px
+
+                    div
+                        margin: 0 
+
+                        p
+                            &:first-of-type 
+                                font-size: 16px
+                                padding: 0
+
+
+                        
+                            &:nth-of-type(2)
+                                font-size: 14px
+                                padding: 0
+
+    /* SECTION 5 */ 
+    
+    #contact
+        margin-bottom: 60px
+
+        .titreMenu
+            font-size: 26px
+
+        span
+            font-size: 30px
+
+        p
+            font-size: 16px
+            padding: 0
+
+        #itemsContact
+            width: 80%
+
+            #itemContact
+
+                i
+                    font-size: 30px
+
+    /* FOOTER */
+
+    footer
+        background-image: url("../img/footer_background.jpg")
+        background-size: cover
+        background-position: center
+
+    #decorationTop
+        background-image: url("../img/footer_bottom_decoration_img.png")
+        background-repeat: repeat-x
+        background-size: contain
+        height: 20px
+        width: 100%
+        z-index: 2
+        margin-bottom: 60px
+
+    #footerDisplay
+        padding: 0 60px
+        flex-direction: column
+        justify-content: unset
+        align-items: center
+
+        div
+            width: 90%
+            margin-bottom: 40px
+            align-items: center
+            
+            &:nth-of-type(2)
+                div
+                    div
+                        img
+                            height: 50px
+                            margin: auto
+
+            &:nth-of-type(3)
+                div
+                    div
+                        width: 100%
+                        justify-content: center
+
+                        p
+                            font-size: 12px
+            
+
+
+    #bottomFooter
+        background-color: $danger
+        height: 75px
+
+
+
+
+
+
+    
+
+
+
+
+
+            
+    
+
+
+
+    
+            
+            
+
+
+    
+
+
+
+                    

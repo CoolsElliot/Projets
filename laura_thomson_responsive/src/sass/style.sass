@@ -1,0 +1,392 @@
+@import "./_fonts"
+@import "./_icones"
+@import "./_variables"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
+body
+    font-family: "Outfit Regular"
+   
+header
+    background-image: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url(../../public/img/hero-bg.jpg)
+    background-size: cover
+
+    h1
+        font-family: "Dancing Regular"
+        font-size: 84px
+
+    p
+        font-size: 20px
+
+    i
+        font-size: 34px
+        color: lightgrey
+
+section
+    &:first-of-type
+
+        margin-bottom: 60px
+        
+        h2
+            position: relative
+            font-size: 50px
+            color: #302f2f
+            margin-top: 100px
+        
+        h2::before
+            content: "ABOUT ME"
+            position: absolute
+            font-size: 76px
+            opacity: 0.1
+            top: -50px
+            left: -75px
+            right: -75px
+
+        p
+            font-size: 20px
+            color: #555555
+        
+        img
+            width: 100%
+            height: 100%
+
+#about
+    width: 80%
+
+    span
+        font-weight: bold
+
+.about1
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+    i
+        font-size: 24px
+        margin-right: 6px
+        margin-bottom: 10px
+        color: $warning
+
+    p
+        margin: 0
+
+.about2
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+    i
+        font-size: 24px
+        margin-right: 6px
+        color: $warning
+        margin-bottom: 10px
+
+    p
+        margin: 0
+
+.about3
+    display: flex
+    align-items: center
+
+    i
+        color: $success
+        font-size: 40px
+        margin-right: 8px
+        margin-bottom: 10px
+
+    h3
+        font-size: 26px
+        font-weight: bold
+
+.about4
+    display: flex
+    align-items: center
+
+    i
+        color: $primary
+        font-size: 40px
+        margin-right: 8px
+        margin-bottom: 10px
+    
+    h3
+        font-size: 26px
+        font-weight: bold
+
+
+.about5
+    display: flex
+    align-items: center
+
+    i
+        color: $danger
+        font-size: 40px
+        margin-right: 8px
+        margin-bottom: 10px
+    
+    h3
+        font-size: 26px
+        font-weight: bold
+
+
+.about6
+    display: flex
+    align-items: center
+
+    i
+        color: $warning
+        font-size: 40px
+        margin-right: 8px
+        margin-bottom: 10px
+    
+    h3
+        font-size: 26px
+        font-weight: bold
+
+#progressbars
+
+    h3
+        font-size: 16px
+        font-weight: bold
+
+    p
+        font-size: 14px
+        font-weight: bold 
+
+section
+    &:nth-of-type(2)
+        
+        h2
+            position: relative
+            font-size: 50px
+            color: #302f2f
+            margin-top: 100px
+        
+        h2::before
+            content: "MY SERVICES"
+            position: absolute
+            font-size: 76px
+            opacity: 0.1
+            top: -50px
+            left: -90px
+            right: -90px
+
+#services
+    width: 80%
+
+section
+    &:nth-of-type(3)
+        margin-bottom: 100px
+        
+        h2
+            position: relative
+            font-size: 50px
+            color: #302f2f
+            margin-top: 100px
+        
+        h2::before
+            content: "CONTACT ME"
+            position: absolute
+            font-size: 76px
+            opacity: 0.1
+            top: -50px
+            left: -90px
+            right: -90px
+
+#service
+    margin-right: 20px
+    box-shadow: 6px 6px 6px 4px rgba(0, 0, 255, .2)
+
+    div
+        border-radius: 50%
+        width: 60px
+        height: 60px
+        background-color: $yellow-200
+        
+    i
+        color: $warning
+        padding: 20px
+        font-size: 30px
+
+#serviceend
+    box-shadow: 6px 6px 6px 4px rgba(0, 0, 255, .2)
+
+    div
+        border-radius: 50%
+        width: 60px
+        height: 60px
+        background-color: $yellow-200
+
+    i
+        color: $warning
+        padding: 20px
+        font-size: 30px
+
+#contact
+    width: 80%
+    height: 96%
+
+    h3
+        margin: 10px 0
+
+    .iconContact
+        border-radius: 50%
+        width: 60px
+        height: 60px
+        background-color: $yellow-200
+        
+
+
+#contact1
+    width: 100%
+    height: 50%
+    margin-bottom: 10px
+    padding: 10px
+    box-shadow: 6px 6px 6px 2px rgba(0, 0, 255, .2)
+
+    & div:first-of-type
+        width: 40px
+        height: 40px
+        
+        i
+            color: $warning
+            padding: 10px
+            font-size: 20px
+
+    ul
+        li
+            border: 1px solid grey
+            border-radius: 50%
+            width: 50px
+            height: 50px
+            
+
+            i
+                color: grey 
+                padding: 15px
+                font-size: 25px
+
+
+
+#contact2
+    height: 50%
+
+    .contact2Items
+        width: 50%
+        margin: 10px auto
+        padding: 10px
+        box-shadow: 6px 6px 6px 2px rgba(0, 0, 255, .2)
+        
+        & div:first-of-type
+            width: 40px
+            height: 40px
+            
+        
+    i
+        color: $warning
+        padding: 10px
+        font-size: 20px
+
+form
+    box-shadow: 6px 6px 6px 2px rgba(0, 0, 255, .2)
+    padding: 20px
+
+    #form1
+        width: 100%
+        display: flex
+        justify-content: center
+
+        input
+            width: 50%
+            height: 40px
+            margin-top: 5px
+            border: none
+            border-radius: 2px
+            outline: 1px solid grey
+            padding: 4px 10px
+
+    #form2
+        width: 100%
+
+        input
+            width: 100%
+            height: 40px
+            margin-top: 15px
+            border: none
+            border-radius: 2px
+            outline: 1px solid grey
+            padding: 4px 10px
+
+        textarea
+            width: 100%
+            height: 120px
+            margin-top: 15px 
+            border: none
+            border-radius: 2px
+            resize: none
+            outline: 1px solid grey 
+            padding: 4px 10px
+
+    button
+        align-self: center
+        border: none
+        border-radius: 5px
+        background-color: $warning
+        color: white
+        padding: 10px 5px
+        width: 25%
+        margin: 20px 0 
+
+footer
+    background-image: linear-gradient(rgba(38, 38, 58, 0.7), rgba(39, 38, 48, 0.6)), url(../../public/img/footer-bg.jpg)
+    background-size: cover
+
+    .footerdisplay
+        
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    h3
+        color: white
+        font-size: 40px
+        font-family: "Dancing Regular"
+
+    p
+        color: white
+
+    span
+        color: $warning
+
+    ul
+        list-style: none
+
+        li
+            background-color: $warning
+            border-radius: 50%
+            width: 40px
+            height: 40px
+
+            i
+                font-size: 20px
+                padding: 10px
+                color: white
+
+.footer-end
+    background-color: $warning
+    border-radius: 6px
+    align-self: flex-end
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+
+    a
+        text-decoration: none
+        i
+            font-size: 20px
+            padding: 10px
+            color: white
+
+            
+        
+

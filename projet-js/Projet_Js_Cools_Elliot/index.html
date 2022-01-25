@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Projet-Js Elliot</title>
+</head>
+
+<body>
+    <nav class="row pt-2 pb-2" style="background-color: rgb(245,235,223); border-bottom: 1px solid #b8b2b2">
+        <h1 class="col-lg-2 fs-5 mt-3 text-center"><span class="fw-bold">HON</span>GO</h1>
+        <ul class="col-lg-6 d-flex mt-3">
+            <li class="ms-5"><a href="#" class="text-dark text-uppercase" style="font-size: 14px">Home</a></li>
+            <li class="ms-5"><a href="#about" class="text-dark text-uppercase" style="font-size: 14px">About</a>
+            </li>
+            <li class="ms-5"><a href="#products" class="text-dark text-uppercase" style="font-size: 14px">Shop</a>
+            </li>
+            <li class="ms-5"><a href="#testimonial" class="text-dark text-uppercase"
+                    style="font-size: 14px">Testimonial</a></li>
+            <li class="ms-5"><a href="#journal" class="text-dark text-uppercase" style="font-size: 14px">Journal</a>
+            </li>
+            <li class="ms-5"><a href="#contact" class="text-dark text-uppercase" style="font-size: 14px">Contact</a>
+            </li>
+        </ul>
+        <div class="col-lg-2 form-check form-switch mt-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"><span>Dark Theme</span></label>
+        </div>
+        <ul class="col-lg-2 d-flex mt-3 justify-content-center">
+            <li class="ms-2"><i class="fas fa-search"></i></li>
+            <li class="ms-2"><i class="fas fa-user-alt"></i></li>
+            <li class="ms-2" style="position: relative;"><i class="far fa-heart"></i><div class="rounded-circle text-light bg-dark d-flex justify-content-center align-items-center hov1" style="width: 16px; height: 16px; position: absolute; bottom: 14px; left: 10px; font-size: 12px">0</div></li>
+            <li class="ms-2" style="position: relative;"><i class="fas fa-shopping-cart"></i><div class="rounded-circle text-light bg-dark d-flex justify-content-center align-items-center hov2" style="width: 16px; height: 16px; position: absolute; bottom: 14px; left: 10px; font-size: 12px;">0</div></li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        
+        <header class="row d-flex position-relative overflow-hidden pt-2 pb-6"
+            style="background-color: rgb(245,235,223)">
+            <div class="col-lg-2 mt-15">
+                <ul class="position-relative">
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fas fa-basketball-ball"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li class="mb-5"><i class="fab fa-facebook-f"></i></li>
+                    <li class="position-absolute" style="display: inline-block; transform: rotate(-90deg); left: 0;">
+                        <p class="fs-6 text-uppercase">Follow&nbsp;&nbsp;Us</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mt-12">
+                <p class="text-uppercase" style="font-size: 12px"><span><del>&nbsp;&nbsp;&nbsp;&nbsp;</del>
+                    </span>&nbsp;&nbsp;New Collection 2019</p>
+                <h2 class="fs-1 fw-bold">Brown leather<br>Women's Bags</h2>
+                <p class="fs-6 text-secondary lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Atque
+                    ipsum maxime
+                    numquam
+                    consectetur qui eos itaque.</p>
+                <p class="fw-bold"><span><del>Regular $69.00</del></span> Just $59.00</p>
+                <button class="btn-dark text-uppercase" style="font-size: 12px">Shop Women</button>
+            </div>
+            <div class="col-lg-5 mt-5">
+                <img class="img-fluid" src="./public/img/collect/one-page-slider-01.png" alt="">
+            </div>
+            <div class="position-absolute d-flex justify-content-center text-light text-uppercase"
+                style="bottom: -86px">
+                <h3 class="fs-20 fw-bold">Womens</h3>
+            </div>
+            <div class="position-absolute" style="top: 120px; right: 0; width: 40px; background-color: white">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="position-absolute" style="top: 160px; right: 0; width: 40px; background-color: white">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </header>
+        <section class="row" id="collection">
+            <div class="d-flex justify-content-center col-lg-12">
+                <div class="d-flex align-items-center me-4 ps-6 pe-6 my-6"><i
+                        class="fas fa-globe me-2 text-secondary"></i>
+                    <p class="m-0 text-secondary">Free Standard Shipping</p>
+                </div>
+                <div class="d-flex align-items-center me-4 ps-6 pe-6 my-6 border-start border-end"><i
+                        class="fas fa-wallet me-2 text-secondary"></i>
+                    <p class="m-0 text-secondary">100% Money Back</p>
+                </div>
+                <div class="d-flex align-items-center me-4 ps-6 pe-6 my-6"><i
+                        class="fas fa-gift me-2 text-secondary"></i>
+                    <p class="m-0 text-secondary">Gifts For Members</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pb-2">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="ms-2 me-2">
+                            <img class="img-fluid" src="./public/img/collect/one-page-collection-06.jpg" alt="">
+                        </div>
+                        <div class="ms-2 me-2">
+                            <img class="img-fluid" src="./public/img/collect/one-page-collection-05.jpg" alt="">
+                        </div>
+                        <div class="ms-2 me-2">
+                            <img class="img-fluid" src="./public/img/collect/one-page-collection-01.jpg" alt="">
+                        </div>
+                        <div class="ms-2 me-2">
+                            <img class="img-fluid" src="./public/img/collect/one-page-collection-03.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="row py-6" id="about">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="col-lg-4 pe-2">
+                    <p class="m-0 text-uppercase" style="font-size: 12px"><span><del>&nbsp;&nbsp;</del></span> About
+                        Company</p>
+                    <p class="m-0 mt-2 fw-bold lead" style="font-size: 16px; letter-spacing: 2px;">The principle of the
+                        design - the harmony,<br>
+                        rhythm and balance are all the same with<br>
+                        interior and fashion design</p>
+                </div>
+                <div class="col-lg-4 ps-2">
+                    <p class="text-secondary m-0 mt-2 fw-light lead" style="font-size: 12px;">The standard chunk of
+                        lorem ipsum used
+                        since the 1500s is below for<br>
+                        those interested sections and 1.10 from de finibus bonorum et malorum by cicero are<br>
+                        also reproduced in their exact original form, accompanied English versions from the<br>
+                        1914 translation by rackham. It is a long & established fact a reader will be distracted<br>
+                        the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+        </section>
+        <section class="row py-7" style="background-color: #f5f0ea">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="col-lg-4 pe-5">
+                    <img class="img-fluid" src="./public/img/collect/one-page-img-03.png" alt="">
+                </div>
+                <div class="col-lg-4 ps-5 mt-5">
+                    <p class="mt-0 text-uppercase fw-bold" style="font-size: 12px">
+                        <span><del>&nbsp;&nbsp;</del></span>&nbsp;&nbsp;Fashion Brand That Contemporary
+                    </p>
+                    <p class="mt-0 fw-bold" style="font-size: 18px">Latest celebrity style fashion<br> and outfit trends
+                    </p>
+                    <p class="mt-0 text-secondary" style="font-size: 12px">The standard chunk of lorem ipsum used since
+                        the 1500s
+                        is<br>
+                        reproduced below for those interested sections and 1.10 from de<br>
+                        finibus bonorum et malorum by cicero are also reproduced in their<br>
+                        exact original form, accompanied English versions from their 1914<br>
+                        translation by rackham. It is a long & established fact a reader will be<br>
+                        distracted the readable content of a page when looking.</p>
+                    <p class="mt-0 text-secondary" style="font-size: 12px">It has has survived not only five centuries,
+                        but is also the
+                        leap into<br>
+                        electronic typesetting leap into life electronic typesetting survived not<br>
+                        only five centuries, but also into electronic typesetting.</p>
+                    <button class="btn-dark text-uppercase" style="font-size: 12px">
+                        More Information
+                    </button>
+                </div>
+            </div>
+    </div>
+    <section class="row m-0" id="products">
+    </section>
+    <section class="row" id="testimonial" style="background-color: #f5f0ea; position: relative;">
+        <div class="container">
+            <div class="col-lg-12 d-flex flex-column align-items-center py-5">
+                <p class="fs-5 fw-bold">Testimonials</p>
+                <p class="text-center text-secondary lead" style="font-size: 12px">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Inventore, eveniet nemo. Velit esse
+                    voluptate laudantium magni!</p>
+            </div>
+            <div id="btnLeft" style="position: absolute; top: 60%; left: 29%; cursor: pointer;"><i class="fas fa-arrow-left text-secondary" style="font-size: 20px;"></i></div>
+            <div id="btnRight" style="position: absolute; top: 60%; left: 68%; cursor: pointer;"><i class="fas fa-arrow-right text-secondary" style="font-size: 20px;"></i></div>
+            
+            <div id="carousel" class="col-lg-12">
+                <div id="carouselItem1" class="d-flex flex-column align-items-center mb-6">
+                    <div class="d-flex flex-column p-4 mb-4" style="background-color: white; width: 30%; border-radius: 6px;">
+                        <h3 class="text-uppercase fw-bold" style="font-size: 14px;">We love digital agencies</h3>
+                        <p class="text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.</p>
+                    </div>
+                    <div class="d-flex ms-5" style="width: 30%;">
+                        <div style="width: 10%;">
+                            <img class="img-fluid" style="border-radius: 50%" src="./public/img/testimonials/image-1-1.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center ms-3">
+                            <p class="fw-bold m-0" style="font-size: 12px;">Mattie Stepanek</p>
+                            <span class="text-secondary" style="font-size: 12px;">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselItem2" class="d-flex flex-column align-items-center mb-6 d-none">
+                    <div class="d-flex flex-column p-4 mb-4" style="background-color: white; width: 30%; border-radius: 6px;">
+                        <h3 class="text-uppercase fw-bold" style="font-size: 14px;">We love from layout</h3>
+                        <p class="text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.</p>
+                    </div>
+                    <div class="d-flex ms-5" style="width: 30%;">
+                        <div style="width: 10%;">
+                            <img class="img-fluid" style="border-radius: 50%" src="./public/img/testimonials/image-2.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center ms-3">
+                            <p class="fw-bold m-0" style="font-size: 12px;">Shoko Mugikura</p>
+                            <span class="text-secondary" style="font-size: 12px;">Designer</span>
+                        </div>
+                    </div>  
+                </div>
+                <div id="carouselItem3" class="d-flex flex-column align-items-center mb-6 d-none">
+                    <div class="d-flex flex-column p-4 mb-4" style="background-color: white; width: 30%; border-radius: 6px;">
+                        <h3 class="text-uppercase fw-bold" style="font-size: 14px;">I love creative design</h3>
+                        <p class="text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto pariatur quis dolore
+                            voluptates. Odit odio illo officiis laudantium cupiditate.</p>
+                    </div>
+                    <div class="d-flex ms-5" style="width: 30%;">
+                        <div style="width: 10%;">
+                            <img class="img-fluid" style="border-radius: 50%" src="./public/img/testimonials/image-3.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center ms-3">
+                            <p class="fw-bold m-0" style="font-size: 12px;">Alexander Harvard</p>
+                            <span class="text-secondary" style="font-size: 12px;">Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row justify-content-center pb-8" id="journal">
+        <div class="col-lg-12 d-flex flex-column align-items-center py-5">
+            <p class="fs-5 fw-bold">Latest Blog</p>
+            <p class="text-center text-secondary lead" style="font-size: 12px">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Libero voluptatem ea voluptatibus rerum repudiandae aliquid? Recusandae?</p>
+        </div>
+        <div class="col-lg-11 d-flex justify-content-between">
+            <div class="d-flex flex-column" style="width: 22%">
+                <img class="img-fluid"  src="./public/img/blog/blog-listing-img63-578x771.jpg" alt="">
+                <button class="btn-dark mt-3 align-self-start" style="font-size: 12px;">Photography</button>
+                <p class="fs-6 fw-bold mt-3">Fashion is part of culture and it's about<br> more than just dress</p>
+                <span class="text-center text-secondary lead align-self-start" style="font-size: 12px"><del>&nbsp;&nbsp;&nbsp;</del>&nbsp;By Alexis Richards</span>
+            </div>
+            <div class="d-flex flex-column" style="width: 22%">
+                <img class="img-fluid" src="./public/img/blog/blog-listing-img58-578x771.jpg" alt="">
+                <button class="btn-dark mt-3 align-self-start" style="font-size: 12px;">Photography</button>
+                <p class="fs-6 fw-bold mt-3">I design to make women feel confident<br> and beautiful fashion</p>
+                <span class="text-center text-secondary lead align-self-start" style="font-size: 12px"><del>&nbsp;&nbsp;&nbsp;</del>&nbsp;By Alexis Richards</span>
+            </div>
+            <div class="d-flex flex-column" style="width: 22%">
+                <img class="img-fluid" src="./public/img/blog/blog-listing-img59-578x771.jpg" alt="">
+                <button class="btn-dark mt-3 align-self-start" style="font-size: 12px;">Photography</button>
+                <p class="fs-6 fw-bold mt-3">A designer is only as good as the star<br> who wears her clotes</p>
+                <span class="text-center text-secondary lead align-self-start" style="font-size: 12px"><del>&nbsp;&nbsp;&nbsp;</del>&nbsp;By Alexis Richards</span>
+            </div>
+            <div class="d-flex flex-column" style="width: 22%">
+                <img class="img-fluid" src="./public/img/blog/blog-listing-img60-578x771.jpg" alt="">
+                <button class="btn-dark mt-3 align-self-start" style="font-size: 12px;">Photography</button>
+                <p class="fs-6 fw-bold mt-3">Chandeliers are marvels of drop dead<br> showiness the jewellery</p>
+                <span class="text-center text-secondary lead align-self-start" style="font-size: 12px"><del>&nbsp;&nbsp;&nbsp;</del>&nbsp;By Alexis Richards</span>
+            </div>
+        </div>
+    </section>
+    <section class="row" id="contact">
+        <div class="col-lg-12 d-flex">
+            <div style="width: 30%; background-image: url(./public/img/collect/one-page-img-04.jpg); background-size: cover; background-position: center;">
+            </div>
+            <div class="p-5" style="width: 25%; background-color: #f5f0ea">
+                <ul>
+                    <li class="d-flex pt-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt me-4"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="fw-bold fs-6 mt-1">Adress details</p>
+                            <span>401 Broadway, 24th Floor</span><br>
+                            <span>Iceland, Iceland 10013</span>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-4"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="fw-bold fs-6 mt-1">Email address</p>
+                            <span>info@domain.com</span><br>
+                            <span>info@domain.com</span>
+                        </div>
+                    </li>
+                    <li class="d-flex">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone me-4"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="fw-bold fs-6 mt-1">Telephone number</p>
+                            <span>+1-800-222-000</span><br>
+                            <span>+1-600-123-000</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="width: 45%; background-image: url(./public/img/fashion/fashion-brand-parallax-bg.jpg);">
+                <form action="" class="d-flex flex-column p-6">
+                    <p class="text-light fw-bold fs-5 ">Simply fill out the form and we'll be in touch with<br> you soon!</p>
+                    <input type="text" placeholder="Name*" style="color: lightgrey; border: none; border-bottom: 1px solid lightgrey; outline-color:lightgrey; padding: 4px; margin-bottom: 18px; background: transparent;">
+                    <input type="email" placeholder="E-mail*" style="color: lightgrey; border: none; border-bottom: 1px solid lightgrey; outline-color: lightgrey ; padding: 4px; margin-bottom: 18px; background: transparent;">
+                    <input type="text" placeholder="Subject" style="color: lightgrey; border: none; border-bottom: 1px solid lightgrey; outline-color: lightgrey; padding: 4px; margin-bottom: 18px; background: transparent;">
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Your Message" style="color: lightgrey; border: none; border-bottom: 1px solid lightgrey; outline-color: lightgrey ; padding: 4px; margin-bottom: 26px; background: transparent;"></textarea>
+                    <button class="btn-light fw-bold text-uppercase text-dark p-1" style="width: 25%; font-size: 12px; border-radius: 4px;" type="submit">Send Message</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-center py-6">
+            <span class="fw-bold text-uppercase" style="font-size: 12px;"><del>&nbsp;&nbsp;&nbsp;</del>&nbsp;Instagram @Hongo Fashion</span>
+        </div>
+    </section>
+    <footer class="row" style="background-color: #222;">
+        <div class="col-lg-12 d-flex justify-content-around py-3" style="border-bottom: 1px solid #333;">
+            <div class="d-flex align-items-center">
+                <p class="text-light text-uppercase m-0 me-2" style="font-size: 12px;">Last Chance to win or discount!</p>
+                <input type="email" placeholder="Enter your email..." style="background-color: #333; border: none;">
+                <button class="text-light text-uppercase" style="border: none; background-color: #333;font-size: 12px;padding: 4px;">Subscribe&nbsp;<i class="fas fa-arrow-right text-light"></i></button>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="text-light text-uppercase m-0" style="font-size: 12px">On social networks</p>
+                <ul class="d-flex m-0">
+                    <li class="me-3">
+                        <a href=""><i class="fab fa-facebook-f text-light"></i></a>
+                    </li>
+                    <li class="me-3">
+                        <a href=""><i class="fab fa-twitter text-light"></i></a>
+                    </li>
+                    <li class="me-3">
+                        <a href=""><i class="fab fa-linkedin-in text-light"></i></a>
+                    </li>
+                    <li class="me-3">
+                        <a href=""><i class="fab fa-instagram text-light"></i></a>
+                    </li>
+                    <li class="me-3">
+                        <a href=""><i class="fab fa-pinterest-p text-light"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="col-lg-12 d-flex align-item-start mt-6 mb-6" style="padding-left: 10%; padding-right: 10%">
+            <div style="width: 25%; padding-right: 60px;">
+                <h2 class="text-light text-uppercase" style="font-size: 14px"><span class="fw-bold">Hon</span>go</h2>
+                <p class="text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur repellendus perspiciatis rem voluptas animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="d-flex flex-column" style="width: 20%">
+                <h3 class="text-light text-uppercase" style="font-size: 12px">Categories</h3>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Women Collection</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Men Collection</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Child Collection</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Accessoires</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Leather shoes</a>
+            </div>
+            <div class="d-flex flex-column" style="width: 20%">
+                <h3 class="text-light text-uppercase" style="font-size: 12px">Customer</h3>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Help and support</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Shipping and delivery</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Payment method</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Terms and conditions</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Privacy policy</a>
+            </div>
+            <div class="d-flex flex-column" style="width: 20%">
+                <h3 class="text-light text-uppercase" style="font-size: 12px">Company</h3>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">About company</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Our services</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Get the voucher</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Store locator</a>
+                <a href="" class="text-decortation-none text-secondary" style="font-size:12px">Contact us</a>
+            </div>
+            <div class="d-flex flex-column" style="width: 20%">
+                <div>
+                    <h3 class="text-light text-uppercase" style="font-size: 12px">Follow us on instagram</h3>
+                </div>
+                <div class="d-flex justify-content-around mb-3">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-01.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%"src="./public/img/footer/infa-02.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-03.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-04.jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-around">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-05.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-06.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-07.jpg" alt="">
+                    <img class="img-fluid" style="width: 20%" src="./public/img/footer/infa-08.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-around pt-3" style="background-color: #111;">
+            <div>
+                <p class="text-light" style="font-size: 12px">2022 HONGO is Proudly Powered by ThemeZaa</p>
+            </div>
+            <div>
+                <img src="./public/img/footer-payment-icon.png" alt="">
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="./public/js/main.js" type="module"></script>
+</body>
+
+</html>

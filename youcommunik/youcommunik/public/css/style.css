@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    margin: auto;
+    width: 60%;
+    box-shadow: 0 3px 30px rgb(0, 0, 0, 0.5)
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#navbar>img{
+    margin: auto 0px auto 10px;
+}
+
+#navbar>nav>ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar>nav>ul>li>a{
+    margin: 10px 20px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#navbar>nav>ul>li>a>p{
+    margin: 5px 0 0 0;
+}
+
+#titrePrincipal{
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 77, 92);
+}
+
+#titrePrincipal>#package{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    padding-left: 20px; 
+}
+
+#titrePrincipal>#package>img{
+    height: 155px;
+    width: 164px;
+}
+
+#titrePrincipal>div{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+#titrePrincipal>div>h1{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 44px;
+}
+
+#titrePrincipal>div>p{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 26px;
+
+
+}
+
+section:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+#eclosion>h2{
+    font-family: 'Ubuntu';
+    margin:40px auto;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(51, 77, 92);
+    width:250px ;
+    text-align: center;
+
+}
+
+#eclosion2{
+    display: flex;
+}
+
+#eclosion2>#eclosionicon{
+    flex: 1;
+    padding-left: 60px;
+}
+
+#eclosion>#eclosionicon>img{
+    height: 226px;
+    width: 226px;
+}
+
+#eclosion2>p{
+    flex: 2;
+}
+
+#eclosionlist{
+    background-color: rgb(234, 227, 214);
+}
+
+#eclosionlist>ul{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+#eclosionlist>ul>li>a{
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(48, 65, 56);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eclosionlist>ul>li>a>img{
+    height: 80px;
+    width: 80px;
+}
+
+#eclosionlist>ul>li>a>p{
+    margin-top: 5px;
+}
+
+#evolution>h2{
+    font-family: 'Ubuntu';
+    margin:40px auto;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(51, 77, 92);
+    width:250px ;
+    text-align: center;
+
+}
+
+#evolution2{
+    display: flex;
+}
+
+#evolution2>#evolutionicon{
+    flex: 1;
+    padding-left: 60px;
+}
+
+#evolution>#evolutionicon>img{
+    height: 226px;
+    width: 226px;
+}
+
+#evolution2>p{
+    flex: 2;
+}
+
+#evolutionlist{
+    background-color: rgb(234, 227, 214);
+}
+
+#evolutionlist>ul{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+#evolutionlist>ul>li>a{
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(48, 65, 56);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#evolutionlist>ul>li>a>img{
+    height: 80px;
+    width: 80px;
+}
+
+#evolutionlist>ul>li>a>p{
+    margin-top: 5px;
+}
+
+#envol>h2{
+    font-family: 'Ubuntu';
+    margin:40px auto;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(51, 77, 92);
+    width:250px ;
+    text-align: center;
+
+}
+
+#envol2{
+    display: flex;
+}
+
+#eclosion2>#eclosionicon{
+    flex: 1;
+    padding-left: 60px;
+}
+
+#eclosion>#eclosionicon>img{
+    height: 226px;
+    width: 226px;
+}
+
+#eclosion2>p{
+    flex: 2;
+}
+
+#eclosionlist{
+    background-color: rgb(234, 227, 214);
+}
+
+#eclosionlist>ul{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+#eclosionlist>ul>li>a{
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(48, 65, 56);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eclosionlist>ul>li>a>img{
+    height: 80px;
+    width: 80px;
+}
+
+#eclosionlist>ul>li>a>p{
+    margin-top: 5px;
+}
+
+
+
+
