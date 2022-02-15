@@ -1,8 +1,8 @@
 import React from "react"
-import Home from "./Home"
-import About from "./About"
-import Product from "./Product"
-import Contact from "./Contact"
+import Home from "./components/Home/Home"
+import About from "./components/About/About"
+import Product from "./components/Product/Product"
+import Contact from "./components/Contact/Contact"
 
 class App extends React.Component {
   render(){
@@ -12,7 +12,13 @@ class App extends React.Component {
           <Home />
         </div>
         <div className="row">
+          <Product />
+        </div>
+        <div className="row">
           <About />
+        </div>
+        <div className="row">
+          <Contact />
         </div>
       </div>
     );
