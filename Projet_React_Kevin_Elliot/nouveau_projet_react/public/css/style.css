@@ -1,7 +1,33 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url("../../public/fonts/Noto_Sans/NotoSans-Bold.ttf");
+}
 h2, .h2 {
   color: red;
   font-size: 66px;
+}
+
+#nav h1, #nav .h1 {
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: "Noto Sans Bold";
+  font-size: 46px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+#nav span {
+  padding-bottom: 40px;
+  font-size: 60px;
+  color: #e65540;
+}
+#nav nav {
+  height: 180px;
+  width: 100%;
+}
+
+#menulist {
+  padding-bottom: 40px;
 }
 
 /*!
@@ -16990,6 +17016,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
